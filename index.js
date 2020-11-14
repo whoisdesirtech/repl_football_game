@@ -16,25 +16,34 @@ let shoeSize = readlineSync.question( "What size shoe fits you 4-30? " );
 console.log( shoeSize + " is your shoe size!" );
 
 
-
 console.log( "What do you want to do?" );
 let option = readlineSync.question( "Options: Go on the field, Interview with a reporter, Stay in locker room\?" );
 
 
-const myFunction1 = () => {
-  console.log('here goes this crazy amazing logix')
+const touchdown1 = () => {
+  console.log('You scored a touchdown!')
+}
+
+const interview1 = () => {
+  console.log('You did a 45 minute interview on why you have a pet tiger!')
+}
+
+const locker1 = () => {
+  console.log('You scored a touchdown')
 }
 
 switch(option) {
   case "Go on the field":
     console.log( "You are ready for some football!" );
-    myFunction1()
+    touchdown1()
     break;
   case "Interview with a reporter":
     console.log( "Okay superstar!!" );
+    interview1()
     break;
   case "Stay in locker Room?":
     console.log( "Locker Room: \"Are you afraid to play?.\"" );
+    locker1()
     break;
     default:
       console.log("That's not a valid response!")
